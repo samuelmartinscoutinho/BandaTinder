@@ -13,6 +13,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+    public void proximaTela(View view){
+
+        Intent intent = new Intent(MainActivity.this, CadastroActivity.class);
+        startActivity(intent);
+    }
 
     public void onClickNotificacaoSimples(View view) {
         int id = 1;
